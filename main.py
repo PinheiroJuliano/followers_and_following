@@ -22,7 +22,7 @@ def main():
 
     nao_seguem_de_volta = seguindo - seguidores
 
-    print("Usuários que você segue, mas que não te seguem de volta:")
+    print(f"Usuários que você segue, mas que não te seguem de volta ({len(nao_seguem_de_volta)}):")
     for nome in sorted(nao_seguem_de_volta):
         print(nome)
 
