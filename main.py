@@ -14,8 +14,8 @@ def extrair_usernames(arquivo, chave_lista=None):
     return usernames
 
 def main():
-    seguindo = set(extrair_usernames('seguindo.json', chave_lista='relationships_following'))
-    seguidores = set(extrair_usernames('seguidores.json'))  # sem chave externa
+    seguindo = set(extrair_usernames('following.json', chave_lista='relationships_following'))
+    seguidores = set(extrair_usernames('followers.json'))  # sem chave externa
 
     print(f"Total seguindo: {len(seguindo)}")
     print(f"Total seguidores: {len(seguidores)}\n")
